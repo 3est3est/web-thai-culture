@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="image/Logo.png" alt="Thai Culture Logo" class="nav-logo" />
+        </a>
+      </div>
+      <div class="navs-link">
+        <a href="index.html">Home</a>
+        <a href="temples.html">Temples</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="traditions.html">Traditions</a>
+        <a href="sport.html">Sport</a>
+      </div>
+      <div class="auth-btn">
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Toggle Dark Mode"
+        >
+          🌙
+        </button>
+        <a href="login.html"><button class="btn btn-login">Login</button></a>
+        <a href="signup.html"><button class="btn btn-signup">Signup</button></a>
+      </div>
+    </nav>
+    <main>
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="province">Province</label>
+            <select id="province" name="province" required>
+              <option value="" disabled selected>Select your province</option>
+              <option value="Bangkok">Bangkok</option>
+              <option value="Chiang Mai">Chiang Mai</option>
+              <option value="Phuket">Phuket</option>
+              <option value="Khon Kaen">Khon Kaen</option>
+              <option value="Chonburi">Chonburi</option>
+              <option value="other">Other</option>
+            </select>
+            <input
+              type="text"
+              id="province-other"
+              name="province-other"
+              class="hidden"
+              placeholder="Please specify your province"
+              style="margin-top: 0.5rem"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="nationality" required>
+              <option value="" disabled selected>
+                Select your nationality
+              </option>
+              <option value="Thai">Thai</option>
+              <option value="American">American</option>
+              <option value="British">British</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Japanese">Japanese</option>
+              <option value="other">Other</option>
+            </select>
+            <input
+              type="text"
+              id="nationality-other"
+              name="nationality-other"
+              class="hidden"
+              placeholder="Please specify your nationality"
+              style="margin-top: 0.5rem"
+            />
+          </div>
+          <button type="submit" class="btn-submit">Sign Up</button>
+        </form>
+        <div class="form-footer">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Made by 67162110359-6</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
